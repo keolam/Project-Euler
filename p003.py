@@ -17,6 +17,7 @@ def largets_prime(n):
 
 def smallest_prime(n):
 	assert n >= 2
+	sqrt = np.sqrt(n).astype(np.int64)
 	for i in range(2, sqrt(n) + 1):
 		if n % i == 0:
 			return i
