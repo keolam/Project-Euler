@@ -7,11 +7,16 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 """
 
 def fibonacci_sum(max):
-  sum,a,b = 0,1,2
-  while a <= max:
-    if a % 2 == 0:
-      sum += a
-    a,b = b, a + b
-  return str(sum)
+    sum,a,b = 0,1,2
+    while a <= max:
+        if a % 2 == 0:
+            sum += a
+        a,b = b, a + b
+    return str(sum)
 
 print(fibonacci_sum(4000000))
+
+#prints: 4613732
+
+
+

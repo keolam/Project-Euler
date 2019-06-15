@@ -12,4 +12,11 @@ def max_palindrome():
         )
     return max(palindromes)
 
-print(max_palindrome()) #906609
+print(max_palindrome()) 
+
+# prints: 906609
+
+
+
+
+
