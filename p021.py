@@ -17,11 +17,17 @@ def amicable_number_sum(n):
 			divisorsum[j] += i
 	
 
-	ans = 0
+	amicable_sum = 0
 	for i in range(1, len(divisorsum)):
 		j = divisorsum[i]
 		if j != i and j < len(divisorsum) and divisorsum[j] == i:
-			ans += i
-	return str(ans)
+			amicable_sum += i
+	return amicable_sum
 
-amicable_number_sum(1000)
+
+print(amicable_number_sum(10000))
+
+#prints: 31626
+
+
+
