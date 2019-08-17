@@ -8,10 +8,10 @@ What is the 10001st prime number?
 import sympy
 import itertools
 
-def nth_prime(max):
+def nth_prime(maximum):
     
     prime_obj = filter(sympy.isprime, itertools.count(2))
-    iter_obj = next(itertools.islice(prime_obj, max - 1, None))
+    iter_obj = next(itertools.islice(prime_obj, maximum - 1, None))
     return str(iter_obj)
 
 print(nth_prime(10001))
