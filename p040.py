@@ -1,36 +1,26 @@
 '''
-The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.
+An irrational decimal fraction is created by concatenating the positive integers:
 
-Find the sum of the only eleven primes that are both truncatable from left to right and right to left.
+0.123456789101112131415161718192021...
 
-NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes.
+It can be seen that the 12th digit of the fractional part is 1.
+
+If dn represents the nth digit of the fractional part, find the value of the following expression.
+
+d1 × d10 × d100 × d1000 × d10000 × d100000 × d1000000
 
 '''
 
-import itertools, sympy
-
-def sum_of_trunc_primes():
-	ans = sum(itertools.islice(filter(is_truncatable_prime, itertools.count(10)), 11))
+def prod_of_nth_decimals():
+	num_gen = "".join(str(i) for i in range(1, 1000000))
+	ans = 1
+	for i in range(7):
+		ans *= int(num_gen[10**i - 1])
 	return str(ans)
 
 
-def is_truncatable_prime(n):
-	# Test if left-truncatable
-	i = 10
-	while i <= n:
-		if not sympy.isprime(n % i):
-			return False
-		i *= 10
-	
-	# Test if right-truncatable
-	while n > 0:
-		if not sympy.isprime(n):
-			return False
-		n //= 10
-	return True
-
-print(sum_of_trunc_primes())
+if __name__ == "__main__":
+	print(prod_of_nth_decimals())
 
 
-
-#prints: 748317
+# prints: 210
