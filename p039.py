@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 If p is the perimeter of a right angle triangle with integral length sides, {a,b,c}, there are exactly three solutions for p = 120.
 
@@ -22,6 +23,7 @@ def count_solutions(p):
   return count
 
 
-print(max_sol(1000))
+if __name__ == "__main__":
+	print(max_sol(1000))
 
 #prints 840

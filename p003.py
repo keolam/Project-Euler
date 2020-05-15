@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 The prime factors of 13195 are 5, 7, 13 and 29.
 
@@ -24,7 +25,8 @@ def smallest_prime(n):
     return n
 
 
-print(largest_prime(600851475143))  
+if __name__ == "__main__":
+	print(largest_prime(600851475143))  
 
 # prints: 6857
 

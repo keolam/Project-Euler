@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. 
 If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. 
@@ -19,7 +20,8 @@ def lex_perm(target):
     return "".join(str(x) for x in next(temp))
 
 
-print(lex_perm(1000000))
+if __name__ == "__main__":
+  print(lex_perm(1000000))
 
 #prints: 2783915460
 

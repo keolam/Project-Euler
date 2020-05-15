@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 
@@ -13,6 +14,7 @@ def sum_of_primes(limit):
   
   return sum(result)
 
-print(sum_of_primes(2000000))
+if __name__ == "__main__":
+  print(sum_of_primes(2000000))
 
 #prints: 142913828922

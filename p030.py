@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:
 
@@ -22,7 +23,8 @@ def sum_of_nth_power_numbers(exponent):
 def fifth_power_digit_sum(n, exp):
     return sum(int(c)**exp for c in str(n))
 
-print(sum_of_nth_power_numbers(5))
+if __name__ == "__main__":
+  print(sum_of_nth_power_numbers(5))
 
 
 #prints: 443839

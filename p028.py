@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows:
 
@@ -18,7 +19,8 @@ def diagonal_sum():
 	ans += sum(4 * i * i - 6 * (i - 1) for i in range(3, SIZE + 1, 2))
 	return str(ans)
 
-print(diagonal_sum())
+if __name__ == "__main__":
+  print(diagonal_sum())
 
 
 

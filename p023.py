@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 A perfect number is a number for which the sum of its proper divisors is exactly equal to the number.
 For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
@@ -37,6 +38,7 @@ def sum_of_abundant_nums(limit):
 	return abundant_sum
 
 
-print(sum_of_abundant_nums(28124))
+if __name__ == "__main__":
+  print(sum_of_abundant_nums(28124))
 
 # prints: 4179871

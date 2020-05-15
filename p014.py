@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 The following iterative sequence is defined for the set of positive integers:
 
@@ -32,7 +33,8 @@ def collatz_length(x):
 		y = x * 3 + 1
 	return collatz_length(y) + 1
 
-print(longest_chain(1000000))
+if __name__ == "__main__":
+  print(longest_chain(1000000))
 
 #prints: 837799
 

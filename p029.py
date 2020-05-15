@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 
 Consider all integer combinations of ab for 2 ≤ a ≤ 5 and 2 ≤ b ≤ 5:
@@ -19,7 +20,8 @@ def distinct_terms(max):
     return str(len(seen))
 
 
-print(distinct_terms(100))
+if __name__ == "__main__":
+  print(distinct_terms(100))
 
 #prints: 9183
 

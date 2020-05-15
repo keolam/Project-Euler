@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total.
 
 If all the numbers from 1 to 1000 (one thousand) inclusive were written out in words, how many letters would be used?
@@ -29,7 +30,8 @@ def letter_tally(limit):
 	   return str(tally)
 
 
-print(letter_tally(1000))
+if __name__ == "__main__":
+  print(letter_tally(1000))
 
 #prints: 21124
 

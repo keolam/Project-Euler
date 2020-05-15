@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3.
 
@@ -29,7 +30,8 @@ def is_truncatable_prime(n):
 		n //= 10
 	return True
 
-print(sum_of_trunc_primes())
+if __name__ == "__main__":
+	print(sum_of_trunc_primes())
 
 
 

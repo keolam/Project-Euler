@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 The sum of the squares of the first ten natural numbers is,
 
@@ -16,7 +17,8 @@ def compute_diff(num):
     sum_of_sq = sum(i**2 for i in range(1, num + 1))
     return str(sq_of_sum - sum_of_sq)
 
-print(compute_diff(100))
+if __name__ == "__main__":
+	print(compute_diff(100))
 
 #prints:  25164150
 

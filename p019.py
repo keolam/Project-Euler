@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 You are given the following information, but you may prefer to do some research for yourself.
 
@@ -22,7 +23,8 @@ def sunday_the_first(start_year, end_year):
 		if dt.date(y, m, 1).weekday() == 6)
 	return tally
 
-print(sunday_the_first(1900, 2000))
+if __name__ == "__main__":
+  print(sunday_the_first(1900, 2000))
 
 # prints: 171
 

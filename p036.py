@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 The decimal number, 585 = 1001001001(sub 2) (binary), is palindromic in both bases.
 
@@ -19,7 +20,8 @@ def binary_palindrome(n):
 	t = bin(n)[2 : ]
 	return t == t[ : : -1]
 
-print(palindromic_sum(1000000))
+if __name__ == "__main__":
+	print(palindromic_sum(1000000))
 
 #prints: 872187
 

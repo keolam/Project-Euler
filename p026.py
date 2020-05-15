@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 A unit fraction contains 1 in the numerator. The decimal representation of the unit fractions with denominators 2 to 10 are given:
 
@@ -31,7 +32,8 @@ def recip_cycle(n):
       x = x * 10 % n
 
 
-print(longest_recurring(1000))
+if __name__ == "__main__":
+  print(longest_recurring(1000))
 
 #prints: 983
 

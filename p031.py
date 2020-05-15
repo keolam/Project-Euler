@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
 
@@ -19,7 +20,8 @@ def coin_sum_combos(pence):
 
 
 
-print(coin_sum_combos(200))
+if __name__ == "__main__":
+  print(coin_sum_combos(200))
 
 #prints 73682
 

@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.
 
@@ -23,7 +24,8 @@ def has_pandigital_product(n):
 				return True
 	return False
 
-print(pandigital_product_sum(9))
+if __name__ == "__main__":
+  print(pandigital_product_sum(9))
 
 
 

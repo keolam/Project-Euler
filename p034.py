@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 
 145 is a curious number, as 1! + 4! + 5! = 1 + 24 + 120 = 145.
@@ -23,7 +24,8 @@ def factorial_digit_sum(n):
 fact_digit_sum = [sum(math.factorial(int(c)) for c in str(i)) for i in range(10000)]
 fact_digit_sum_leading_zeros = [sum(math.factorial(int(c)) for c in str(i).zfill(4)) for i in range(10000)]
 
-print(curious_number_sum())
+if __name__ == "__main__":
+  print(curious_number_sum())
 
 
 #prints: 40730

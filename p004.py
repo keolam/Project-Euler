@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 
@@ -12,7 +13,8 @@ def max_palindrome():
         )
     return max(palindromes)
 
-print(max_palindrome()) 
+if __name__ == "__main__":
+	print(max_palindrome()) 
 
 # prints: 906609
 

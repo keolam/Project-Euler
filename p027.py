@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 Euler discovered the remarkable quadratic formula:
 
@@ -30,7 +31,8 @@ def max_consecutive_primes(ab):
 		if not sympy.isprime(n):
 			return i
 
-print(product_of_coefficient())
+if __name__ == "__main__":
+  print(product_of_coefficient())
 
 #prints: -59231 
 

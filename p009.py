@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 import numpy as np
 
 def pythag_triplet(target):
@@ -13,6 +14,7 @@ def pythag_triplet(target):
                 return
 
 
-pythag_triplet(1000)
+if __name__ == "__main__":
+	pythag_triplet(1000)
 
 #prints: a: 200, b: 375, c: 425.0, Product: 31875000.0

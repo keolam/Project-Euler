@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''The number, 197, is called a circular prime because all rotations of the digits: 197, 971, and 719, are themselves prime.
 
 There are thirteen such primes below 100: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79, and 97.
@@ -23,7 +24,8 @@ def circular_prime_qty(limit):
     if is_circular_prime(i))
   return str(ans)
 
-print(circular_prime_qty(1000000))
+if __name__ == "__main__":
+	print(circular_prime_qty(1000000))
 
 #prints: 55
 

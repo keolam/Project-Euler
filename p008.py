@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 """
 The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832.
 
@@ -42,7 +43,8 @@ def greatest_adjacent(num, adj):
     return greatest_seq, greatest_product
         
 
-print(greatest_adjacent(thousand_digit_num, 13))
+if __name__ == "__main__":
+	print(greatest_adjacent(thousand_digit_num, 13))
 
 #prints: ('5576689664895', 23514624000) 
 

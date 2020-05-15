@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 Take the number 192 and multiply it by each of 1, 2, and 3:
 
@@ -21,6 +22,7 @@ def max_pandigital(len):
 				ans = max(s, ans)
 	return ans
 
-print(max_pandigital(9))
+if __name__ == "__main__":
+	print(max_pandigital(9))
 
 #prints: 932718654

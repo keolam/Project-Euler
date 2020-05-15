@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 '''
 
 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
@@ -111,7 +112,8 @@ numbers = [
 def first_ten_of_sum(list):
     return str(sum(list))[ : 10]
     
-print(first_ten_of_sum(numbers))
+if __name__ == "__main__":
+  print(first_ten_of_sum(numbers))
 
 #prints: 5537376230
 
